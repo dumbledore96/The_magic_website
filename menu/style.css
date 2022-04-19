@@ -1,0 +1,258 @@
+@import url('http://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/cwtexyen.css');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+html{
+    font-family: 'Nunito';
+    font-size: 12px;
+    font-weight: 600;
+}
+
+section{
+    min-height: 100vh;
+    min-width: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: rgb(26, 26, 27);
+}
+
+.container{
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*
+from{
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: rgb(223, 223, 223);
+    border-radius: 4px;
+}
+
+from input{
+    width: 90%;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+from ion-icon{
+    width: 9%;
+    font-size: 3rem;
+    margin: -9px;
+    color: rgb(75, 75, 75);
+}*/
+
+.search-result{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(300px,1fr));
+}
+
+.item{
+    width: 450px;
+    border-radius: 8px;
+    background-color: rgb(37, 37, 37);
+    padding: 15px;
+    overflow: hidden;
+}
+
+.item img{
+    width: 400px;
+    height: 300px;
+    border-radius: 4px;
+
+}
+
+.item.flex-contatainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.item.title{
+    color: whitesmoke;
+    margin: 20px 10px 0 0 ;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.view-button{
+    text-decoration: none;
+    text-align: center;
+    margin: 300px;
+    width: 130px;
+    padding: 10px 0;
+    background-color: #404041;
+    color:white;
+    font-size: 1.4rem;
+    margin-top: 60px;
+    align-self: flex-start;
+}
+
+.item-data{
+    color: whitesmoke;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    letter-spacing: 0.5rem;
+    line-height: 2rem;
+}
+
+
+
+
+
+body , ul{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 0.7cm;
+}
+
+a:hover{
+    background: rgba(245, 238, 238, 0.932);
+}
+
+#logo{
+    font-size: 0.7cm;
+    font-weight: bold;
+    letter-spacing :1px;
+    padding: 90px;
+    font-family: 'cwTeXYen', sans-serif;
+    color: rgb(248, 246, 246);
+}
+
+h1{
+    font-size: 0.8cm;
+    color: cornsilk;
+}
+
+#header{
+    
+    width: 500px;
+    margin: -10px;
+    margin-top: -80px;
+    margin-bottom: -40px;
+    font-size: 4rem;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #292727;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+    font-size: 0.8cm;
+}
+
+#btn-mobilo{
+    display: none;
+    color: blanchedalmond;
+
+}
+@media (max-width: 600px) {
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #929090;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+      color: blanchedalmond;
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+      color: blanchedalmond;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
+
+  
+h2{
+    color: blanchedalmond;
+    font-family: 'cwTeXYen', sans-serif;
+}
