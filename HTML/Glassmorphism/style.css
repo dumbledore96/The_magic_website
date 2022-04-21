@@ -28,7 +28,7 @@ body{
 
 .loader span:nth-child(1){
     background: rgba( 255, 255, 255, 0.1);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(px);
     border-top: 0.25px solid rgba( 255, 255, 255, 0.5);   
     border-left: 0.25px solid rgba( 255, 255, 255, 0.5);
     z-index: 2;
