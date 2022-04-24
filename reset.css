@@ -62,7 +62,7 @@ header h1 span{
 	animation: animate 5s linear infinite;
 	animation-delay: 10s;
 }
-
+/*
 @keyframes animate{
 	0%{
 		color: antiquewhite;
@@ -90,4 +90,4 @@ header h1 span{
 		
 	}
 	
-}
+}*/
