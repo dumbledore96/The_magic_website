@@ -59,7 +59,7 @@ header h1{
 }
 
 header h1 span{
-	animation: animate 2s linear infinite;
+	animation: animate 5s linear infinite;
 	animation-delay: 10s;
 }
 
@@ -82,11 +82,11 @@ header h1 span{
 	}
 	80%{
 		color: azure;
-		font-size:30px;
+		font-size:40px;
 	}
 	100%{
 		color: #fff;
-		font-size: 40px;
+		font-size: 60px;
 		
 	}
 	
