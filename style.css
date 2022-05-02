@@ -27,6 +27,8 @@ h1{
     }
 }
 
+
+
 article{
     background-color: #222;
     padding: 20px;
@@ -42,12 +44,14 @@ article p{
 
 .item{
     position: relative;
-    border: 3px solid #555;
+    /* border: 2px solid #555; */
     margin: 20px 0;
     padding: 10px;
-    background-color: #222;
+    background-color: transparent;
     animation: inter .5s 1.5s backwards;
     box-sizing: border-box;
+    transition: .3s;
+    overflow: hidden;
 }
 
 .item h2{
@@ -91,6 +95,83 @@ a{
     100%{
         bottom: 0;
         opacity: 100%;
+    }
+}
+
+/* 動畫邊框 */
+.item span:nth-child(1){
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: an1 1s linear infinite;
+}
+@keyframes an1 {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+.item span:nth-child(2){
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: an2 1s .5s linear infinite;
+}
+@keyframes an2 {
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 100%;
+    }
+}
+
+.item span:nth-child(3){
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: an3 1s 1s linear infinite;
+}
+@keyframes an3 {
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+.item span:nth-child(4){
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg,transparent,#03e9f4);
+    animation: an4 1s 1.5s linear infinite;
+}
+@keyframes an4 {
+    0%{
+        bottom: -100%;
+    }
+    100%{
+        bottom: 100%;
     }
 }
 
